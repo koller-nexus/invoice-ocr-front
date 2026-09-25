@@ -42,3 +42,13 @@
 - Accessibility: provide labels, keyboard focus, `prefers-reduced-motion` respect, descriptive errors, and aria-live for dynamic status.
 - Security: never embed secrets in the client. Treat Server Actions like public endpoints (authZ inside each action).
 - DX: keep functions short and focused, avoid global state, inject dependencies explicitly, and keep public APIs typed and documented.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T12:25:00Z",
+  "title": "Design System: invoice-ocr-front",
+  "extensions": {
+    "colorMeta": {
+      "ink-carbon": {
+        "role": "primary",
+        "displayName": "Ink Carbon",
+        "canonical": "oklch(0.205 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.205 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.42 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.85 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "ink-deep": {
+        "role": "neutral",
+        "displayName": "Ink Deep",
+        "canonical": "oklch(0.145 0 0)",
+        "tonalRamp": [
+          "oklch(0.145 0 0)",
+          "oklch(0.22 0 0)",
+          "oklch(0.32 0 0)",
+          "oklch(0.45 0 0)",
+          "oklch(0.58 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.95 0 0)"
+        ]
+      },
+      "bond-paper": {
+        "role": "neutral",
+        "displayName": "Bond Paper",
+        "canonical": "oklch(1 0 0)",
+        "tonalRamp": [
+          "oklch(0.15 0 0)",
+          "oklch(0.28 0 0)",
+          "oklch(0.42 0 0)",
+          "oklch(0.56 0 0)",
+          "oklch(0.70 0 0)",
+          "oklch(0.84 0 0)",
+          "oklch(0.94 0 0)",
+          "oklch(1 0 0)"
+        ]
+      },
+      "proof-wash": {
+        "role": "neutral",
+        "displayName": "Proof Wash",
+        "canonical": "oklch(0.97 0 0)",
+        "tonalRamp": [
+          "oklch(0.18 0 0)",
+          "oklch(0.30 0 0)",
+          "oklch(0.44 0 0)",
+          "oklch(0.58 0 0)",
+          "oklch(0.72 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.97 0 0)",
+          "oklch(0.99 0 0)"
+        ]
+      },
+      "pencil-gray": {
+        "role": "neutral",
+        "displayName": "Pencil Gray",
+        "canonical": "oklch(0.556 0 0)",
+        "tonalRamp": [
+          "oklch(0.16 0 0)",
+          "oklch(0.28 0 0)",
+          "oklch(0.40 0 0)",
+          "oklch(0.556 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.80 0 0)",
+          "oklch(0.90 0 0)",
+          "oklch(0.96 0 0)"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "oklch(0.922 0 0)",
+        "tonalRamp": [
+          "oklch(0.20 0 0)",
+          "oklch(0.35 0 0)",
+          "oklch(0.50 0 0)",
+          "oklch(0.65 0 0)",
+          "oklch(0.78 0 0)",
+          "oklch(0.86 0 0)",
+          "oklch(0.922 0 0)",
+          "oklch(0.97 0 0)"
+        ]
+      },
+      "focus-ring": {
+        "role": "neutral",
+        "displayName": "Focus Ring",
+        "canonical": "oklch(0.708 0 0)",
+        "tonalRamp": [
+          "oklch(0.18 0 0)",
+          "oklch(0.32 0 0)",
+          "oklch(0.46 0 0)",
+          "oklch(0.58 0 0)",
+          "oklch(0.708 0 0)",
+          "oklch(0.82 0 0)",
+          "oklch(0.90 0 0)",
+          "oklch(0.96 0 0)"
+        ]
+      },
+      "audit-red": {
+        "role": "tertiary",
+        "displayName": "Audit Red",
+        "canonical": "oklch(0.577 0.245 27.325)",
+        "tonalRamp": [
+          "oklch(0.15 0.245 27.325)",
+          "oklch(0.26 0.245 27.325)",
+          "oklch(0.38 0.245 27.325)",
+          "oklch(0.49 0.245 27.325)",
+          "oklch(0.577 0.245 27.325)",
+          "oklch(0.70 0.245 27.325)",
+          "oklch(0.82 0.245 27.325)",
+          "oklch(0.95 0.245 27.325)"
+        ]
+      },
+      "primary-foreground": {
+        "role": "neutral",
+        "displayName": "Primary Foreground",
+        "canonical": "oklch(0.985 0 0)",
+        "tonalRamp": [
+          "oklch(0.20 0 0)",
+          "oklch(0.36 0 0)",
+          "oklch(0.52 0 0)",
+          "oklch(0.68 0 0)",
+          "oklch(0.82 0 0)",
+          "oklch(0.90 0 0)",
+          "oklch(0.955 0 0)",
+          "oklch(0.985 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": { "displayName": "Headline", "purpose": "Card titles. The named station on the bench." },
+      "title": { "displayName": "Title", "purpose": "Product lockup in the sticky header." },
+      "body": { "displayName": "Body", "purpose": "Default interface copy, buttons, field values, timeline step names." },
+      "label": { "displayName": "Label", "purpose": "Metric captions, field dts, helper text. Sentence case." },
+      "mono": { "displayName": "Mono", "purpose": "Raw JSON panel only. Do not use mono for UI labels." }
+    },
+    "shadows": [
+      {
+        "name": "state-thumb",
+        "value": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+        "purpose": "Active tab inside the default tabs list only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-standard",
+        "value": "all 150ms cubic-bezier(0.4, 0, 0.2, 1)",
+        "purpose": "Default state transitions on buttons, badges, and tabs."
+      },
+      {
+        "name": "press-in",
+        "value": "transform 100ms ease-out",
+        "purpose": "Primary/outline active press: 1px translateY."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "40rem" },
+      { "name": "md", "value": "48rem" },
+      { "name": "lg", "value": "64rem" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Committed next action on the bench (Process).",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\"><svg class=\"ds-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><polygon points=\"6 3 20 12 6 21 6 3\"/></svg>Process</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 0.375rem; height: 1.75rem; padding: 0 0.625rem; border: 1px solid transparent; border-radius: var(--radius, 0.625rem); background: var(--primary); color: var(--primary-foreground); font: 500 0.8rem/1 Geist, ui-sans-serif, system-ui, sans-serif; white-space: nowrap; cursor: pointer; transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 100ms ease-out; } .ds-btn-primary:hover { background: color-mix(in oklch, var(--primary) 80%, transparent); } .ds-btn-primary:focus-visible { outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent); } .ds-btn-primary:active { transform: translateY(1px); } .ds-icon { width: 0.875rem; height: 0.875rem; flex: none; }"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary bench action (Reset, Copy JSON).",
+      "html": "<button class=\"ds-btn-outline\" type=\"button\">Reset</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; height: 1.75rem; padding: 0 0.625rem; border: 1px solid var(--border); border-radius: var(--radius, 0.625rem); background: var(--background); color: var(--foreground); font: 500 0.8rem/1 Geist, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 100ms ease-out; } .ds-btn-outline:hover { background: var(--muted); color: var(--foreground); } .ds-btn-outline:focus-visible { outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent); } .ds-btn-outline:active { transform: translateY(1px); }"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Station on the bench: header, body, optional muted footer.",
+      "html": "<article class=\"ds-card\"><header class=\"ds-card-header\"><div class=\"ds-card-title\">Upload image</div><p class=\"ds-card-desc\">PNG, JPEG, WEBP • Max 10MB</p></header><div class=\"ds-card-body\">Drop a scan to begin.</div><footer class=\"ds-card-footer\">Ready to process.</footer></article>",
+      "css": ".ds-card { display: flex; flex-direction: column; gap: 1rem; overflow: hidden; border-radius: calc(var(--radius, 0.625rem) * 1.4); background: var(--card); color: var(--card-foreground); font: 400 0.875rem/1.5 Geist, ui-sans-serif, system-ui, sans-serif; box-shadow: 0 0 0 1px color-mix(in oklch, var(--foreground) 10%, transparent); } .ds-card-header { padding: 1rem 1rem 0; } .ds-card-title { font-weight: 500; font-size: 1rem; line-height: 1.375; } .ds-card-desc { margin: 0.25rem 0 0; color: var(--muted-foreground); font-size: 0.875rem; } .ds-card-body { padding: 0 1rem; } .ds-card-footer { margin-top: auto; padding: 1rem; border-top: 1px solid var(--border); background: color-mix(in oklch, var(--muted) 50%, transparent); color: var(--muted-foreground); font-size: 0.75rem; }"
+    },
+    {
+      "name": "Secondary Badge",
+      "kind": "chip",
+      "refersTo": "badge-secondary",
+      "description": "Quiet meta chip (F0 Demo, completed status).",
+      "html": "<span class=\"ds-badge-secondary\">F0 Demo</span>",
+      "css": ".ds-badge-secondary { display: inline-flex; align-items: center; height: 1.25rem; padding: 0.125rem 0.5rem; border: 1px solid transparent; border-radius: calc(var(--radius, 0.625rem) * 2.6); background: var(--secondary); color: var(--secondary-foreground); font: 500 0.75rem/1 Geist, ui-sans-serif, system-ui, sans-serif; white-space: nowrap; } .ds-badge-secondary:focus-visible { outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent); }"
+    },
+    {
+      "name": "Default Badge",
+      "kind": "chip",
+      "refersTo": "badge-default",
+      "description": "Running-state chip on the pipeline.",
+      "html": "<span class=\"ds-badge-default\">running</span>",
+      "css": ".ds-badge-default { display: inline-flex; align-items: center; height: 1.25rem; padding: 0.125rem 0.5rem; border: 1px solid transparent; border-radius: calc(var(--radius, 0.625rem) * 2.6); background: var(--primary); color: var(--primary-foreground); font: 500 0.75rem/1 Geist, ui-sans-serif, system-ui, sans-serif; white-space: nowrap; } .ds-badge-default:focus-visible { outline: none; border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent); }"
+    },
+    {
+      "name": "Destructive Alert",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "Inline upload or pipeline error. Audit Red is the only chroma.",
+      "html": "<div class=\"ds-alert\" role=\"alert\"><svg class=\"ds-alert-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"/><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"/></svg><div><div class=\"ds-alert-title\">Upload error</div><p class=\"ds-alert-desc\">Invalid file type. Use PNG, JPEG, or WEBP.</p></div></div>",
+      "css": ".ds-alert { display: grid; grid-template-columns: auto 1fr; gap: 0.125rem 0.5rem; width: 100%; padding: 0.5rem 0.625rem; border: 1px solid var(--border); border-radius: var(--radius, 0.625rem); background: var(--card); color: var(--destructive); font: 400 0.875rem/1.4 Geist, ui-sans-serif, system-ui, sans-serif; text-align: left; } .ds-alert-icon { width: 1rem; height: 1rem; margin-top: 0.125rem; } .ds-alert-title { font-weight: 500; } .ds-alert-desc { margin: 0; color: color-mix(in oklch, var(--destructive) 90%, transparent); }"
+    },
+    {
+      "name": "Dropzone",
+      "kind": "input",
+      "refersTo": "dropzone",
+      "description": "Signature file well. Dashed hairline; ink dash while dragging.",
+      "html": "<div class=\"ds-dropzone\" role=\"region\" aria-label=\"Image dropzone\"><svg class=\"ds-dropzone-icon\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/><circle cx=\"8.5\" cy=\"8.5\" r=\"1.5\"/><path d=\"m21 15-5-5L5 21\"/></svg><p>Drag and drop an image here, or click to browse.</p></div>",
+      "css": ".ds-dropzone { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.5rem; padding: 1.5rem; border: 2px dashed var(--border); border-radius: calc(var(--radius, 0.625rem) * 1.4); background: var(--background); color: var(--muted-foreground); font: 400 0.875rem/1.5 Geist, ui-sans-serif, system-ui, sans-serif; text-align: center; transition: border-color 150ms cubic-bezier(0.4, 0, 0.2, 1), background 150ms cubic-bezier(0.4, 0, 0.2, 1); } .ds-dropzone:hover { background: color-mix(in oklch, var(--muted) 40%, transparent); } .ds-dropzone:focus-within { border-color: var(--primary); background: color-mix(in oklch, var(--muted) 50%, transparent); } .ds-dropzone-icon { width: 1.5rem; height: 1.5rem; } .ds-dropzone p { margin: 0; }"
+    },
+    {
+      "name": "Metric Tile",
+      "kind": "custom",
+      "refersTo": "metric-tile",
+      "description": "Telemetry cell: mute label over tabular value.",
+      "html": "<div class=\"ds-metric\"><div class=\"ds-metric-label\">Estimated cost</div><div class=\"ds-metric-value\">$0.00</div></div>",
+      "css": ".ds-metric { padding: 0.75rem; border: 1px solid var(--border); border-radius: calc(var(--radius, 0.625rem) * 0.8); background: var(--card); color: var(--card-foreground); } .ds-metric-label { font: 400 0.75rem/1.33 Geist, ui-sans-serif, system-ui, sans-serif; color: var(--muted-foreground); } .ds-metric-value { font: 500 0.875rem/1.5 Geist, ui-sans-serif, system-ui, sans-serif; font-variant-numeric: tabular-nums; }"
+    },
+    {
+      "name": "Tabs",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "In-card view switch (Fields / Raw JSON). Shadow only on the active thumb.",
+      "html": "<div class=\"ds-tabs\"><button class=\"ds-tab ds-tab-active\" type=\"button\">Fields</button><button class=\"ds-tab\" type=\"button\">Raw JSON</button></div>",
+      "css": ".ds-tabs { display: inline-flex; align-items: center; height: 2rem; padding: 3px; border-radius: var(--radius, 0.625rem); background: var(--muted); } .ds-tab { height: calc(100% - 1px); padding: 0.125rem 0.375rem; border: 1px solid transparent; border-radius: calc(var(--radius, 0.625rem) * 0.8); background: transparent; color: color-mix(in oklch, var(--foreground) 60%, transparent); font: 500 0.875rem/1 Geist, ui-sans-serif, system-ui, sans-serif; cursor: pointer; } .ds-tab:hover { color: var(--foreground); } .ds-tab:focus-visible { outline: 1px solid var(--ring); border-color: var(--ring); box-shadow: 0 0 0 3px color-mix(in oklch, var(--ring) 50%, transparent); } .ds-tab-active { background: var(--background); color: var(--foreground); box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05); }"
+    },
+    {
+      "name": "Progress",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "4px meter for pipeline step and Ollama memory.",
+      "html": "<div class=\"ds-progress\" role=\"progressbar\" aria-valuenow=\"35\" aria-valuemin=\"0\" aria-valuemax=\"100\"><span class=\"ds-progress-ind\"></span></div>",
+      "css": ".ds-progress { position: relative; display: flex; align-items: center; width: 100%; height: 0.25rem; overflow: hidden; border-radius: 999px; background: var(--muted); } .ds-progress-ind { display: block; width: 35%; height: 100%; background: var(--primary); transition: width 150ms cubic-bezier(0.4, 0, 0.2, 1); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Proof Room",
+    "overview": "This is an operate surface for reading invoices, not a marketing page. The Proof Room now runs at night: a Cursor/Vercel-grade black console where a scan is checked, fields are confirmed, and missing evidence stays missing. Personality is austere and operational. Brand lives in white ink on void, hairline rings, and a single chromatic exception.\n\nDensity is high and even. Geist carries every voice (the same face Vercel ships); Geist Mono appears only when the content is raw. Surfaces recede as graphite panels on true black. The visitor's success is finishing the job: upload, watch the pipeline, read the structured result, trust the telemetry or see that it is unavailable.\n\nThe system rejects the SaaS card kit and the cream-paper Proof Room: no grey drop shadows, no decorative gradients, no neon accent, no tracked-out ALL-CAPS eyebrows.",
+    "keyCharacteristics": [
+      "Dark-default black-and-white; chroma reserved for errors",
+      "Geist + Geist Mono; compact operate type scale (no display hero)",
+      "Flat surfaces at rest; hairline + frost instead of structural shadow",
+      "White primary action on black canvas",
+      "Unavailable metrics render as “—”, never as invented precision"
+    ],
+    "rules": [
+      { "name": "The Rare Ink Rule", "body": "Audit Red is the only chromatic voice. It appears only for errors, invalid state, and destructive actions. Neutrals do the rest.", "section": "colors" },
+      { "name": "The Tabular Truth Rule", "body": "Quantities, costs, durations, and token counts use tabular-nums. Missing telemetry is an em dash (“—”), never a fabricated figure.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Surfaces are flat at rest. Shadows appear only as a response to state (active tab, focus). Cards never wear a resting drop shadow.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do speak through semantic tokens (`primary`, `muted`, `destructive`, `border`) so light and dark stay one system.",
+      "Do render missing telemetry as “—” or an explicit unavailable alert (The Tabular Truth Rule).",
+      "Do keep cards flat with a 10% ink ring; put frost only on the sticky header.",
+      "Do keep type compact: body at 14px, labels at 12px, no display hero on operate surfaces.",
+      "Do reserve Audit Red for error, invalid, and destructive — nowhere else (The Rare Ink Rule)."
+    ],
+    "donts": [
+      "Don't add resting grey drop shadows or decorative gradients under cards (SaaS card kit).",
+      "Don't introduce tracked-out ALL-CAPS eyebrows, middle-dot meta strings as ornament, or a second display face.",
+      "Don't invent confidence, cost, or memory numbers when the backend did not provide them.",
+      "Don't use Geist Mono for chrome or labels; it is for raw dumps only.",
+      "Don't promote a page-specific layout (the two-column bench) into a global marketing grid."
+    ]
+  }
+}

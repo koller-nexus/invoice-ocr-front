@@ -11,6 +11,12 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Architecture
+
+![Architecture](image/architecture.png)
+
+End-to-end flow with `invoice-ocr-poc`: browser compresses the image, uploads to the API, polls SQLite-backed results, and shows OCR/Jev telemetry.
+
 ## Invoice OCR Front — F0 Demo
 
 This repository implements the Frontend F0 for the OCR invoice demo:
