@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    optimizePackageImports: ["@base-ui/react", "lucide-react"],
+  },
 };
 
 export default nextConfig;

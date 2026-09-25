@@ -2,21 +2,37 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Architecture
+
+![Architecture](image/architecture.png)
+
+End-to-end flow with `invoice-ocr-poc`: browser compresses the image, uploads to the API, polls SQLite-backed results, and shows OCR/Jev telemetry.
+
+## Invoice OCR Front — F0 Demo
+
+This repository implements the Frontend F0 for the OCR invoice demo:
+
+- Drag-and-drop image upload (PNG/JPEG/WEBP, up to ~10MB) with preview
+- Mocked processing timeline: upload → preprocess → OCR (Ollama `glm-ocr`) → structure (OpenRouter) → consolidate → done/fail
+- Telemetry panels:
+  - Ollama panel (model label, running status, memory current/peak placeholder)
+  - OpenRouter panel (model label, tokens in/out/total, estimated USD cost, latency placeholder)
+- Result card: structured invoice fields + Raw JSON tab
+- Cost summary: separates local Ollama resources vs OpenRouter tokens/cost
+- Professional loading: skeletons, contextual progress, `aria-busy`, no orphan spinners
+
+Notes:
+- This F0 uses mocked delays and values. Backends/SSE wiring can be added later.
+- Components are built with Tailwind CSS v4 and shadcn/ui; icons use lucide-react.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
