@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
+    },
+    "impeccable": {
+      "source": "pbakaus/impeccable",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/impeccable/SKILL.md",
+      "computedHash": "f7c4e03bef91154273d2dc3b62aff829cf4ab1b1f16e6b98c8c6a31be4405318"
+    },
+    "ocr-document-processor": {
+      "source": "dkyazzentwatwa/chatgpt-skills",
+      "sourceType": "github",
+      "skillPath": "ocr-document-processor/SKILL.md",
+      "computedHash": "77bed505511791b2a0debc598954f03fec403eec7f2c2ccfb87320487f501b3f"
+    },
+    "tailwind-design-system": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/frontend-mobile-development/skills/tailwind-design-system/SKILL.md",
+      "computedHash": "cd61afd28f594e8b6712b61749209cbb4466e3eec4e4223793bbd97fc85c1b63"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "3219a1944e404ffc14d1d9d6aef6dd2e3855b81387ee0a044ccbfe14d34c2357"
+    }
+  }
+}
