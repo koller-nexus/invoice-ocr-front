@@ -347,9 +347,20 @@ export default function Home() {
   const uploadBusy = isProcessing && steps.some((s) => s.key === "upload_received" && s.status === "running");
   const isRunning = isProcessing || steps.some((s) => s.status === "running");
   const activeStepIndex = steps.findIndex((s) => s.status === "running");
+  const liveMessage = useMemo(() => {
+    const running = steps.find((s) => s.status === "running");
+    if (running) return `Processing: ${running.title}`;
+    const lastDone = [...steps].reverse().find((s) => s.status === "success");
+    if (lastDone) return `Last completed: ${lastDone.title}`;
+    return "Idle";
+  }, [steps]);
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Announce timeline updates to assistive tech */}
+      <div className="sr-only" aria-live="polite" aria-atomic="true">
+        {liveMessage}
+      </div>
       <header className="border-b sticky top-0 z-10 bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="mx-auto max-w-6xl px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
