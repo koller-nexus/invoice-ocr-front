@@ -15,7 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ![Architecture](image/architecture.png)
 
-End-to-end flow with `invoice-ocr-poc`: browser compresses the image, uploads to the API, polls SQLite-backed results, and shows OCR/Jev telemetry.
+End-to-end with `invoice-ocr-poc`: the browser compresses the image (max edge 1024px, JPEG quality 0.5), uploads to the Gin API, and polls invoice status. The backend cascade is Tesseract → Ollama → OpenRouter, with optional DeepSeek assist and TypeSafe Jev. Persistence is SQLite or PostgreSQL (`DB_BACKEND`); OCR text-hash cache is memory or Redis (`CACHE_BACKEND`).
+
 
 ## Invoice OCR Front — F0 Demo
 
